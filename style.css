@@ -1,16 +1,19 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 *::before,
-*::after{
-    box-sizing:border-box;
+*::after {
+  box-sizing: border-box;
 }
-*{
+
+* {
   transition: all 0.3s;
 }
-body{
+
+body {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,38 +21,51 @@ body{
 
 }
 
-    .actions{
-      position: absolute;
-      right: 0;
-      top: 0;
-      display: flex;
-      flex-direction: column;
-    }
-    .actions>button{
-      margin: 10px;
-      background: #ddd;
-      padding: 8px 10px;
-      border: none;
-    }
-    .actions>button.active{
-      box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
-    }
-    .actions>button:focus{
-      outline: none;
-    }
+.actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-    .code-wrapper{
-      flex:1;
-      height: 50%;
-      padding: 10px;
-      
-    }
-    .preview-wrapper{
-      flex: 1;
-      height: 50%;
-      
-    }
-    #code{
-      overflow: hidden;
-      height: 100%;
-    }
+.actions>button {
+  margin: 10px;
+  color:#fff;
+  background: rgba(191, 126, 93, 0.988);
+  padding: 8px 10px;
+  border: none;
+  border-radius: 55%;
+  cursor: pointer;
+}
+
+.actions>button.active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  background: #6E3619;
+}
+
+.actions>button:focus {
+  outline: none;
+}
+
+.code-wrapper {
+  flex: 1;
+  height: 50%;
+  padding: 10px;
+
+}
+
+.preview-wrapper {
+  flex: 1;
+  height: 50%;
+
+}
+
+#code {
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  color:#6E3619;
+  font-size:16px;
+  padding-left:5vw;
+}
